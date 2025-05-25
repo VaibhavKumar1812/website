@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHRI BALAJI CLASSES - Online Education Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="" navbar>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="logo.png" alt="EduLearn" class="logo-img" />
+                <span>SHRI BALAJI CLASSES</span>
+            </div>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Image Slider Section -->
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="slide"><img src="jdfg.jpg" alt="Slide 1" /></div>
+                <div class="slide"><img src="WhatsApp Image 2025-05-24 at 17.57.09_030d193a.jpg" alt="Slide 2" /></div>
+                <div class="slide"><img src="uflgie.jpg" alt="Slide 3" /></div>
+            </div>
+            <button class="slider-btn prev">&#10094;</button>
+            <button class="slider-btn next">&#10095;</button>
+            <!-- Dot navigation -->
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Success is waiting for you...........</h2>
+            <p>Shri Balaji Classes is here to guide you every step of the way.
+                Let’s build your future together — one step, one subject, one success at a time.
+            </p>
+            <a href="courses.html" class="btn">Browse Courses</a>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Courses
+    <main class="container courses">
+        <h3>Featured Courses</h3>
+        <div class="course-grid">
+            <div class="course-card">
+                <img src="course1.jpg" alt="Mathematics" />
+                <h4>Mathematics</h4>
+                <p>Master problem-solving, algebra, and advanced math with expert guidance.</p>
+                <a href="#">View Course</a>
+            </div>
+            <div class="course-card">
+                <img src="course2.jpg" alt="Science" />
+                <h4>Science</h4>
+                <p>Master problem-solving,and advanced science with expert guidance.</p>
+                <a href="#">View Course</a>
+            </div>
+            <div class="course-card">
+                 <img src="course3.jpg" alt="English" />
+                <h4>English</h4>
+                <p>Improve grammar, vocabulary, and communication skills effectively.</p>
+                <a href="#">View Course</a>
+            </div>
+            <div class="course-card">
+                <h4>Army:NDA,TES</h4>
+                <p>Master problem-solving,and advanced general science ,with expert guidance.</p>
+                <a href="#">View Course</a>
+            </div>
+        </div>
+    </main> -->
+    <!-- About Section -->
+    <section id="about" class="about-section animate">
+        <div class="container">
+            <h3>About Shri Balaji Classes</h3>
+            <p class="intro">
+                Shri Balaji Classes is dedicated to providing high-quality education and personal growth for students of
+                all levels.At Shri Balaji Classes, we believe that every student has the potential to achieve greatness
+                — they just need the right guidance to get there.our coaching center has helped hundreds of students
+                unlock their academic potential and build confidence in their abilities.Our team of experienced
+                educators
+                is passionate about teaching and committed to student success. We go beyond textbooks — focusing on
+                conceptual clarity, problem-solving skills, time management, and exam strategies that work in real-world
+                testing environments.
+                Whether you're aiming for top ranks, struggling with concepts, or looking for consistent academic
+                support,
+                Shri Balaji Classes is here to guide you every step of the way.
+                Let’s build your future together — one step, one subject, one success at a time.
+            </p>
+            <div class="honeycomb">
+                <div class="hex">
+                    <img src="photo5.jpg" alt="Team 1" />
+                </div>
+                <div class="hex">
+                    <img src="photo2.jpg" alt="Team 2" />
+                </div>
+                <div class="hex">
+                    <img src="photo3.jpg" alt="Team 3" />
+                </div>
+                <div class="hex">
+                    <img src="photo4.jpg" alt="Team 4" />
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h4>Our Mission</h4>
+                    <p>To empower students with knowledge, skills, and confidence through personalized learning and
+                        dedicated mentorship.</p>
+
+                    <h4>Why Choose Us?</h4>
+                    <ul>
+                        <li>✅ Experienced and passionate educators.</li>
+                        <li>✅ Regular assessments and feedback.</li>
+                        <li>✅ Doubt-clearing sessions & personalized mentoring.</li>
+                        <li>✅ Affordable and quality education.</li>
+                        <li>✅ We provide coaching for all the subject from grade 1st-12th.</li>
+                        <li>✅ We offers Home Tution also.</li>
+                        <li>✅ UP and CBSE Board.</li>
+                        <li>✅ Preparation for ARMY(Agniveer).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section animate">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <p>Email: shribalajiclasses@gmail.com</p>
+            <p>Phone: +91 94521 28315</p>
+            <p>Address: Gunjan Vihar Colony , Narayanpur, Farrukhabad, U.P , India</p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            &copy; 2025 SHRI BALAJI CLASSES. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+    <script>
+        // Observer for animated images
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    imageObserver.unobserve(entry.target); // animate only once
+                }
+            });
+        });
+
+        document.querySelectorAll('.animated-image').forEach(img => {
+            imageObserver.observe(img);
+        });
+    </script>
+    <script>
+        const track = document.querySelector('.slider-track');
+        const slides = document.querySelectorAll('.slide');
+        const nextBtn = document.querySelector('.slider-btn.next');
+        const prevBtn = document.querySelector('.slider-btn.prev');
+        const dotsContainer = document.getElementById('sliderDots');
+
+        let currentIndex = 0;
+        const total = slides.length;
+
+        // Generate dots
+        for (let i = 0; i < total; i++) {
+            const dot = document.createElement('span');
+            dot.addEventListener('click', () => {
+                currentIndex = i;
+                updateSlider();
+                resetAutoplay();
+            });
+            dotsContainer.appendChild(dot);
+        }
+        const dots = dotsContainer.querySelectorAll('span');
+
+        function updateSlider() {
+            const width = slides[0].clientWidth;
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots[currentIndex].classList.add('active');
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+            resetAutoplay();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider();
+            resetAutoplay();
+        });
+
+        // Optional: autoplay
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+        }, 4000); // every 4 seconds
+        function resetAutoplay() {
+            clearInterval(autoplay);
+            autoplay = setInterval(() => {
+                index = (index + 1) % total;
+                updateSlider();
+            }, 4000);
+        }
+
+        updateSlider(); // initialize
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
