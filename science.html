@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science Courses</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #eef5f9;
+        }
+
+        .header {
+            background: #27ae60;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #d4f7e4;
+        }
+
+        .courses-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            padding: 40px;
+        }
+
+        .course-card {
+            background: white;
+            padding: 20px;
+            border-left: 5px solid #2ecc71;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-card h3 {
+            margin: 0 0 10px;
+        }
+
+        .course-card p {
+            margin: 0 0 10px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 8px 14px;
+            background-color: #27ae60;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #1e8449;
+        }
+
+        .video-embed {
+            margin-top: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f2937;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Science Courses</h1>
+        <p class="tagline">Explore the world through physics, chemistry, and biology</p>
+    </div>
+
+    <div class="courses-container">
+        <div class="course-card">
+            <h3>Physics Basics</h3>
+            <p>Learn motion, forces, and energy.</p>
+            <a href="notes/physics-basics.pdf" class="download-btn" download>📄 Download Notes</a>
+
+            <!-- <div class="video-embed">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/uhgfiuwew"
+                    title="Creative Writing Tips" frameborder="0" allowfullscreen></iframe>
+            </div> -->
+        </div>
+        <div class="course-card">
+            <h3>Chemistry Fundamentals</h3>
+            <p>Atoms, reactions, and lab skills.</p>
+            <a href="notes/chemistry-fundamentals.pdf" class="download-btn" download>📄 Download Notes</a>
+
+            <!-- <div class="video-embed">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/jhcasiudc"
+                    title="Creative Writing Tips" frameborder="0" allowfullscreen></iframe>
+            </div> -->
+        </div>
+        <div class="course-card">
+            <h3>Biology Overview</h3>
+            <p>Cells, life systems, and organisms.</p>
+            <a href="notes/biology-overview.pdf" class="download-btn" download>📄 Download Notes</a>
+
+            <!-- <div class="video-embed">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                    title="Creative Writing Tips" frameborder="0" allowfullscreen></iframe>
+            </div> -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SHRI BALAJI CLASSSES. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>
